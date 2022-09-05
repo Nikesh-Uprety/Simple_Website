@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" media="screen and (max-width:750px)" href="responsive.css">
+
+
+</head>
+
+<body>
+    <div class="contactback">
+        <nav id="navbar">
+            <div id="logo">
+                <img src="Images/photo.jpg" alt="Cannot Load Image">
+            </div>
+            <ul>
+                <li class="items"> <a href="index.html">Home</a> </li>
+                <li class="items"> <a href="about.html">About</a> </li>
+                <li class="items"> <a href="contact.html">Contact</a> </li>
+                <!-- <li class="items"> <a href="#">Hire Me</a> </li> -->
+            </ul>
+        </nav>
+        <!-- <video autoplay muted loop id="myVideo">
+        <source src="/Graphics/intro.mp4" type="video/mp4">
+      </video> -->
+      
+        <section id="contact">
+            <div class="content">
+                <div class="nikesh">Message</div>
+                <div id="form">
+                    <form action="nikesh.php" id="contactForm" method="post">
+                        <span>Name</span>
+                        <input type="text" name="name" class="name" placeholder="Enter your name" tabindex=1 />
+                        <span>Email</span>
+                        <input type="text" name="email" class="email" placeholder="Enter your email" tabindex=2 />
+                        <span id="captcha"></span>
+                        
+                        <textarea class="message" placeholder="Enter your message" tabindex=4></textarea>
+                        <input type="submit" name="submit" value="Send e-mail" class="submit" tabindex=5>
+                    </form>
+                </div>
+        </section>
+    </div>
+</body>
+
+</html>

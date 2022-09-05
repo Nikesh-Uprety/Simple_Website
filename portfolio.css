@@ -1,0 +1,433 @@
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* Whole structure html style */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --navbar-height: 60px
+}
+
+#navbar {
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+}
+
+#logo img {
+    margin: -7px;
+    padding: 18px 34px;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: all ease-in 0.5s;
+    display: inline;
+}
+
+#logo img:hover {
+
+    height: 200px;
+    width: 150px;
+    border-radius: 0%;
+    opacity: 1;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 auto;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    opacity: .5;
+    z-index: -1;
+    margin: 0px;
+    padding: -23px 0px 0px 0px;
+
+}
+
+#navbar ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
+    padding: 4px;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+
+#navbar ul li a:hover {
+    background-color: rgb(181, 131, 131);
+    color: black;
+}
+
+.buttoms button {
+    /* width: 90px; */
+    padding: 7px;
+    margin: 18px 15px 100px 0;
+    color: rgb(255, 245, 245);
+    border-radius: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    border: white;
+    /* background-color: rgb(150, 150, 196); */
+    background-color: rgb(16, 166, 189);
+    font-family: 'Lato', sans-serif;
+}
+
+.buttoms button:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+
+.whole {
+    border: 2px solid rgb(245, 245, 245);
+    height: 110vh;
+    width: 100vw;
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
+}
+
+
+
+/* .whole {
+    border: 2px solid rgb(245, 245, 245);
+    height: 92vh;
+    width: 100vw;
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
+} */
+
+
+.myself {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.first {
+    font-size: 4rem;
+    font-family: 'Figtree', sans-serif;
+
+}
+
+.second {
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.third 
+{
+  width: 34ch;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  animation: typing 3s steps(34), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.about {
+
+    height: 200px;
+    margin: 74px 20px 0 118px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.whole::before {
+    content: "";
+    /* background-color: blue; */
+    background-image: url(/Images/resize.jpg);
+    position: absolute;
+    width: 100vw;
+    height: 813px;
+    opacity: 1;
+    z-index: -1;
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    /* border: 4px solid black; */
+}
+                /* about me style */
+
+.photo{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 97px;
+    margin-left: -454px;
+    z-index: -1;
+    border-radius: 2px;
+    cursor:pointer;
+    /* transition: all ease-in 0.5s; */
+
+}
+.intro{
+    height: 500px;
+    width: 459px;
+    /* border: 4px solid black; */
+    display:flex;
+    align-items: center;
+    margin: 0 0 0 45rem;
+
+}
+
+ /* */ 
+.myback{
+  height: 100vh;
+  width: 100%;
+  position:absolute;
+  z-index: -1;
+  /* object-fit: none; */
+}
+.basic{
+    margin-top:212px;
+    display: block;
+    /* border: 4px solid blue; */
+    padding:20px;
+}
+.basic h3{
+    color: white;
+    font-size: 3rem;
+    font-family:'Lato', sans-serif;
+    position:relative;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding:0 0 20px 0;
+}
+.basic p{
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif; 
+    text-align:justify;
+}
+
+  /* Contact Form style */
+  .contactback {
+    background: url(http://img6.uploadhouse.com/fileuploads/17737/17737075bdad5cfa9423bb2c3c2beee695c72bb8.jpg);
+    color: #B1B1B1;
+    height: 100vh;
+    margin: 15px auto 0;
+    width: 100vw;
+  }
+  #contact {
+    overflow: auto;
+  }
+  #contact #form {
+    width:480px;
+    margin-top: 40px;
+    margin-left: 400px;
+  }
+  #contact #form h2 {
+    font: 48px 'Bree Serif', Georgia, serif;
+  }
+  #contact #form span {
+    display:block;
+    float:left;
+    width:100px;
+    padding-top:5px;
+    margin-top: 0px;
+    margin-left: 0px;
+    font: 14px/16px'Bree Serif', Georgia, serif;
+  }
+  #contact #form input {
+    float:left;
+    width:255px;
+    border:0px;
+    color:#F1F1F1;
+    padding:10px 10px 10px 30px;
+    font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+    margin-bottom:10px;
+  }
+  #contact #form textarea {
+    float:left;
+    border:0px;
+    width:255px;
+    height:140px;
+    padding:28px 128px 6px 13px;
+    font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+    color:#F1F1F1;
+    resize: none;
+  }
+  #contact #form input.name {
+    background:#222222 url(http://img7.uploadhouse.com/fileuploads/17737/177370145f09fe433945815665aa214f80dbc6af.png) no-repeat 10px 8px;
+  }
+  #contact #form input.email {
+    background:#222222 url(http://img6.uploadhouse.com/fileuploads/17737/177370138cc63992182149e9befabff3eafa6d23.png) no-repeat 10px 9px;
+  }
+
+  #contact #form textarea.message {
+    background:#222222 url(http://img3.uploadhouse.com/fileuploads/17737/1773701229ed8c2f465a8274623ca8976adaf196.png) no-repeat 10px 8px;
+  }
+ 
+  #contact #form input.submit {
+    cursor: pointer;
+    width:85px;
+    height:30px;
+    float:right;
+    padding:0px 0px 5px 0px;
+    margin:28px 81px 6px 13px;
+    background:#222222;
+    color:#F1F1F1;
+    font: 14px/16px'Bree Serif', Georgia, serif;
+  }
+  /* .message{
+    display:block;
+    position: absolute;
+  } */
+  .message{
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .nikesh
+  {
+    position: absolute;
+    display: flex;
+    margin-top: 93px;
+    margin-left: 400px;
+    font: 14px/16px'Bree Serif', Georgia, serif;
+    /* z-index: -1; */
+
+  }
+/* **********************  Social media handels style ******************************* */
+
+* {
+}
+.icons{
+  position: relative;
+  /* border: 4px solid red; */
+  position: absolute;
+  height: 300px;
+  width: 400px;
+  margin-top: -134px;
+  margin-left: 95px;
+  /* height: 100vh; */
+  /* width: 100vw; */
+
+
+}
+/* .social{
+
+  margin: 0;
+  border: 4px solid red;
+  margin-top: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+} */
+.wrapper .button {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover {
+  width: 180px;
+}
+.wrapper .button .icon {
+  display: inline-block;
+  height: 40px;
+  width: 50px;
+  /* position: absolute; */
+  margin-top: -4px;
+  margin-left: 11px;
+  /* text-align: center; */
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+.wrapper .button:nth-child(2):hover .icon {
+  background: #1da1f2;
+}
+.wrapper .button:nth-child(3):hover .icon {
+  background: #e1306c;
+}
+.wrapper .button:nth-child(4):hover .icon {
+  background: #ff0000;
+}
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 20px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-left: 5px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span {
+  color: #4267b2;
+}
+.wrapper .button:nth-child(2) span {
+  color: #1da1f2;
+}
+.wrapper .button:nth-child(3) span {
+  color: #e1306c;
+}
+.wrapper .button:nth-child(4) span {
+  color: #ff0000;
+}
+.wrapper a{
+  text-decoration: none;
+  color: black;
+}

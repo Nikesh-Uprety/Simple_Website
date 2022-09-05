@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+.container{
+display: grid;
+grid-gap: 0.5rem;
+grid-template-areas: 
+'navbar navbar navbar navbar'
+'section section section aside';
+border: 4px solid red;   
+}
+
+.item{
+padding:5px;
+/* background-color: yellow; */
+border: 4px solid black;
+}
+
+#navbar{
+grid-area: navbar;
+height: 4rem;
+}
+
+#section{
+/* margin-left: 37px; */
+/* width: 500px; */
+grid-area: section;
+/* height: 37rem; */
+/* z-index: -1; */
+}
+#section::after{
+    content: "";
+    background-image: url(/Images/photo2.jpg);
+    grid-area: section;
+    position: absolute;
+    height: 60vh;
+    width: 400px;
+    z-index: -1;
+}
+
+#aside{
+margin-right: 165px;
+grid-area: aside;
+text-align: justify;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item
+        ">Home About Contact Us</div>
+        <div id="section" class="item
+        ">  </div>
+        <div id="aside" class="item
+        "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nam minima quidem atque? Nam eum, enim autem magnam exercitationem modi. Animi exercitationem dicta id ab minus iste aperiam, vel velit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dicta nihil doloremque suscipit architecto excepturi aspernatur odio repellat blanditiis totam ratione eaque nulla velit amet voluptas porro illo officia culpa quam, beatae consequatur ipsa maxime dolorem fugiat. Ut, quaerat iure!.</div>
+    </div>
+</body>
+</html>
