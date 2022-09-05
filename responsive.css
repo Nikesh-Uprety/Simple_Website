@@ -30,7 +30,7 @@
 .whole::before {
     content: "";
     /* background-color: blue; */
-    background-image: url(/Images/resize.jpg);
+    background-image: url(./resize.jpg);
     position: absolute;
     width: 99vw;
     height: 673px;
